@@ -40,19 +40,11 @@ button {
   font-style: normal;
   
   background-color: var(--background);
-  
+
   border: none;
 
-  -webkit-transition: background-color .2s ease-out;
-  -moz-transition: background-color .2s ease-out;
-  -o-transition: background-color .2s ease-out;
-  transition: background-color .2s ease-out;
-
-  transition: color .2 ease-out;
-
-
-  width: 323px;
-  height: 98px;
+  width: 280px;
+  height: 85px;
   border-radius: 20px;
 
   font-size: 2rem;
