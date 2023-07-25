@@ -1,8 +1,10 @@
 <script>
   import Travis from "./Home/Travis.svelte";
   import Calhoun from "./Home/Calhoun.svelte";
+  import Border from "./Home/Border.svelte";
 </script>
 
+<Border rotation={180} />
 <div class="home-wrapper">
   <div class="title-wrapper">
     <h3 class="pretitle title">Hello! I'm</h3>
@@ -26,12 +28,14 @@
     </div>
   </div>
 </div>
+<Border rotation={0} />
 
 <style>
   .home-wrapper {
     display: flex;
     flex-direction: column;
     width: 100vw;
+    margin-bottom: 5vh;
   }
 
   .title-wrapper {
@@ -50,6 +54,7 @@
     font-size: 2.5625rem;
     margin-bottom: 40px;
     margin-left: 20vw;
+    margin-top: 0px;
   }
 
   .name-title {
@@ -95,10 +100,6 @@
     background: linear-gradient(90deg, #4cdea4, #91f934);
   }
 
-  .about-me-button-gradient:hover {
-    background: #4cdea4;
-    background: linear-gradient(90deg, #4cdea4, #91f934);
-  }
   .about-me-button-gradient:hover > .about-me-button {
     background: #00000000;
     color: var(--background);
@@ -114,11 +115,7 @@
 
   .projects-button-gradient {
     background: #e73c7e;
-    background: linear-gradient(90deg, #e73c7e 0%, #ee7752 100%);
-  }
-
-  .projects-button-gradient:hover {
-    background: linear-gradient(90deg, #e73c7e 0%, #ee7752 100%);
+    background: linear-gradient(90deg, #fe4e92 0%, #ff7c54 100%);
   }
 
   .projects-button-gradient:hover > .projects-button {
@@ -134,11 +131,7 @@
   }
 
   .achievements-button-gradient {
-    background: linear-gradient(to right, #31bfdf, #6f6bd6);
-  }
-
-  .achievements-button-gradient:hover {
-    background: linear-gradient(to left, #31bfdf, #6f6bd6);
+    background: linear-gradient(90deg, #1bd5ff 0%, #827ef7 100%);
   }
   .achievements-button-gradient:hover > .achievements-button {
     background: #00000000;
